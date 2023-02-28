@@ -1,0 +1,12 @@
+#This function takes an array of numbers and returns the difference between the array's even and odd number sums.
+def even_odd_sum(arr):
+    even_sum = 0
+    odd_sum = 0
+    
+    for num in arr:
+        if num % 2 == 0:    # Check if number is even
+            even_sum += num  # Add it to even sum
+        else:
+            odd_sum += num   # Add it to odd sum
+    
+    return even_sum - odd_sum
