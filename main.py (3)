@@ -1,0 +1,16 @@
+#Output remains the same
+def sumEvenMinusOdd(arr):
+  even_sum = 0
+  odd_sum = 0
+  i = 0
+  while i < len(arr):
+    if arr[i] % 2 == 0:
+      even_sum += arr[i]
+    else:
+      odd_sum += arr[i]
+    i += 1
+  return even_sum - odd_sum
+
+print(sumEvenMinusOdd([1, 4, 3, 6, 2])) # => 12 - 4 = 8
+print(sumEvenMinusOdd([2, 4, 6, 8])) # => 30
+print(sumEvenMinusOdd([1, 3, 5, 7, 9])) # => 25 - 0 = 25
