@@ -1,0 +1,21 @@
+#In this code, we will define a class named "Item" that will have three private attributes - Name, Section, and Price. We will also define a print method that will combine these three attributes into a single string. Additionally, we will define and test a method of our choice.
+class Item:
+    def __init__(self, name, section, price):
+        self.__name = name
+        self.__section = section
+        self.__price = price
+        
+    def print_item(self):
+        print(f"{self.__name} cost {self.__price} and can be found in {self.__section}.")
+        
+    def update_price(self, new_price):
+        self.__price = new_price
+        
+# Testing the Item class and its methods
+item1 = Item("Head and Shoulders Shampoo", "Beauty", 8.99)
+item1.print_item()  # Output: Head and Shoulders Shampoo cost 8.99 and can be found in Beauty.
+
+item1.update_price(9.99)
+item1.print_item()  # Output: Head and Shoulders Shampoo cost 9.99 and can be found in Beauty.
+
+#We define a class named "Item" using the class keyword. Inside the class, we define an __init__ method that initializes the three private attributes - __name, __section, and __price. We also define a print_item method that uses an f-string to print out the values of the attributes in a formatted string. We define an update_price method that takes a new price as an argument and updates the value of the __price attribute. Finally, we create an instance of the Item class and test its methods by calling them on the instance.
